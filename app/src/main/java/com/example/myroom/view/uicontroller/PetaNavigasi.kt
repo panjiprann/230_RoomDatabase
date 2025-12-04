@@ -19,12 +19,12 @@ fun SiswaApp(navController: NavHostController = rememberNavController(), modifie
 @Composable
 fun HostNavigasi(
     navController: NavHostController,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier // Ini sudah benar
 ) {
     NavHost(
         navController = navController,
         startDestination = DestinasiHome.route,
-        modifier = modifier
+        modifier = modifier // Ini kunci
     ) {
         composable(route = DestinasiHome.route) {
             HomeScreen(
